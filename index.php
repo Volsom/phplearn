@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Hello, world!</h1>
     <?php
-        //echo <h1>Hello, world!</h1>;
+        echo '<h1>Hello, world!</h1>';
+        $a = 100;
+        echo ++$a;
     ?>
 </body>
 </html>
