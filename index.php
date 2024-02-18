@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Лабораторная 1</title>
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <?php
-        echo '<h1>Hello, world!</h1>';
-        $a = 100;
-        echo ++$a;
-    ?>
+    <header>
+        <img src="/img/5868.upto100x100.png" alt="Logo Polytech">
+    </header>
+    <main>
+        <?php
+            echo '<h1>Hello, world!</h1>';
+        ?>
+    </main>
+    <footer>
+        <p>Мослов Александр 231-323</p>
+    </footer>
 </body>
 </html>
