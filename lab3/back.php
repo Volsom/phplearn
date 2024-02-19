@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практика</title>
+    <title>Лабораторная 1</title>
 </head>
 <body>
     <style>
@@ -84,25 +84,22 @@
         a:hover:after {
             width: 100%;
         }
+        .home {
+            display: flex;
+            align-items: center;
+        }
     </style>
     <header>
-        <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
-        <div>
-            <a href="/phplearn/lab1">Lab1</a>
-            <a href="/phplearn/lab3">Lab3</a>
+        <div class = "home">
+            <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
+            <a href="/phplearn/">HOME</a>
         </div>
     </header>
     <main>
         <?php
-            echo '<h1>Hello, world!</h1>';
-            $expression = 0;
+            print_r(get_headers('https://getbootstrap.com/docs/5.3/forms/overview/#overview'));
         ?>
-        <?= '<p>напечатать эту строку</p>' ?>
-        <?php if ($expression == true): ?>
-            <p>Это будет отображено, если выражение истинно.</p>
-        <?php else: ?>
-            <p>В ином случае будет отображено это.</p>
-        <?php endif; ?>
+        <a href="index.html">Переход на 1 страницу</a>
     </main>
     <footer>
         <p>Мослов Александр 231-323</p>

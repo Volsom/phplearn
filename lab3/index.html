@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная 1</title>
+    <title>Форма обратной связи</title>
 </head>
 <body>
     <style>
@@ -64,6 +64,8 @@
             position: relative;
             font-size: 16px;
             font-weight: 700;
+            display: flex;
+            justify-content: center;
         }
         a::after {
             position: absolute;
@@ -88,17 +90,68 @@
             display: flex;
             align-items: center;
         }
+        input, textarea, button {
+            color: blueviolet;
+            font-size: 12px;
+            font-weight: 900;
+            border-radius: 4px;
+        }
+        form {
+            font-size: 12px;
+            font-weight: 900;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        ::placeholder {
+            font-size: 12px;
+            font-weight: 900;
+        }
+        .go {
+            width: fit-content;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
     <header>
         <div class = "home">
             <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
-            <a href="/phplearn/">HOME</a>
+            <a href="/phplearn">HOME</a>
         </div>
+        <h1>Форма обратной связи</h1>
     </header>
     <main>
-        <?php
-            echo '<h1>Hello, world!</h1>';
-        ?>
+        <div class="container">
+            <form action="https://httpbin.org/post" method="post">
+                <div class="f-1">
+                    <label for="name">Имя пользователя<br></label>
+                    <input type="text" name="name" id="name" inputmode="text" placeholder="Имя"> 
+                </div>
+                <br>
+                <div class="f-2">
+                    <label for="email">E-mail<br></label>
+                    <input type="text" name="email" id="email" inputmode="email" placeholder="your@domain.com">   
+                </div>
+                <br>
+                <div class="f-3">
+                    <p>Тип обращения: <br> 
+                        <input type="radio" name="appeal" value="Жалоба">Жалоба <br>
+                        <input type="radio" name="appeal" value="Предложение">Предложение <br>
+                        <input type="radio" name="appeal" value="Благодарность">Благодарность </p>
+                </div>
+                <br>
+                <div class="f-4">
+                    <textarea placeholder="Текст обращения" name="appealtext" id="appealtext" cols="30" rows="10" inputmode="text"></textarea>
+                </div>
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+            <br>
+        <a class="go" href="/phplearn/lab3/back.php">Переход на 2 страницу</a>
+        </div>
     </main>
     <footer>
         <p>Мослов Александр 231-323</p>
