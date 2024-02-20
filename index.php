@@ -89,6 +89,7 @@
         <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
         <div>
             <a href="/phplearn/lab1">Lab1</a>
+            <a href="/phplearn/lab2">Lab2</a>
             <a href="/phplearn/lab3">Lab3</a>
         </div>
     </header>
@@ -103,6 +104,26 @@
         <?php else: ?>
             <p>В ином случае будет отображено это.</p>
         <?php endif; ?>
+        <?php
+            define('name', 'Александр'); #константа;
+            print('<p>'.'Моё имя: '.name.'</p>'); #конкатенация;
+            /*
+                (int), (integer) - приведение к целому числу;
+                (bool), (boolean) - приведение к булеву типу;
+                (float), (double), (real) - приведение к числу с плавающей точкой;
+                (string) - приведение к строке;
+                (array) - приведение к массиву;
+                (object) - приведение к объекту
+            */
+            $str = '27 - x = 17';
+            $arr1 = explode(' ', $str);
+            $arr2 = str_split($str);
+            $line1 = print_r($arr1, 1);
+            $line2 = print_r($arr2, 1);
+            print('<p>'.$line1.'</p>');
+            print('<p>'.$line2.'</p>');
+            #implode — Объединяет элементы массива в строку;
+        ?>
     </main>
     <footer>
         <p>Мослов Александр 231-323</p>
