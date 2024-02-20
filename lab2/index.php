@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вывод</title>
+    <title>Лабораторная 2</title>
 </head>
 <body>
     <style>
@@ -64,6 +64,8 @@
             position: relative;
             font-size: 16px;
             font-weight: 700;
+            display: flex;
+            justify-content: center;
         }
         a::after {
             position: absolute;
@@ -88,29 +90,15 @@
             display: flex;
             align-items: center;
         }
-        main {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        textarea {
-            max-width: 90vw;
-        }
     </style>
     <header>
         <div class = "home">
             <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
-            <a href="/phplearn/">HOME</a>
+            <a href="/phplearn">HOME</a>
         </div>
     </header>
     <main>
-        <textarea name="output" id="output" cols="30" rows="10">
-            <?php
-                print_r(get_headers('https://getbootstrap.com/docs/5.3/forms/overview/#overview'));
-            ?>
-        </textarea>
-        <br>
-        <a href="index.html">Переход на 1 страницу</a>
+        
     </main>
     <footer>
         <p>Мослов Александр 231-323</p>
