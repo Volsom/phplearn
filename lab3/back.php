@@ -88,6 +88,14 @@
             display: flex;
             align-items: center;
         }
+        main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        textarea {
+            max-width: 90vw;
+        }
     </style>
     <header>
         <div class = "home">
@@ -96,9 +104,12 @@
         </div>
     </header>
     <main>
-        <?php
-            print_r(get_headers('https://getbootstrap.com/docs/5.3/forms/overview/#overview'));
-        ?>
+        <textarea name="output" id="output" cols="30" rows="10">
+            <?php
+                print_r(get_headers('https://getbootstrap.com/docs/5.3/forms/overview/#overview'));
+            ?>
+        </textarea>
+        <br>
         <a href="index.html">Переход на 1 страницу</a>
     </main>
     <footer>
