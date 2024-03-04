@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en, ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная 4</title>
+</head>
+<body>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            font-family: monospace;
+        }
+        .logo {
+            display: block;
+            object-fit: contain;
+            object-position: left;
+            width: 100%;
+            height: 100%;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: darkgray;
+            height: 84px;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 40px;
+        }
+        .logo__wrapper {
+            width: 64px;
+            height: 64px;
+            background-color: unset;
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            background-color:darkgray;
+            color: black;
+            font-weight: 700;
+            height: 80px;
+        }
+        body {
+            background-color: lightslategrey;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        h1 {
+            margin: 0;
+            padding: 10px;
+        }
+        p {
+            padding-left: 10px;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+        }
+        a::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -10px;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: black;
+            color: black;
+            background-color: black;
+        }
+        a::after {
+            width: 0;
+            transition: 0.3s;
+        }
+        a:hover:after {
+            width: 100%;
+        }
+        .home {
+            display: flex;
+            align-items: center;
+        }
+        input, textarea, button {
+            color: blueviolet;
+            font-size: 12px;
+            font-weight: 900;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            font-size: 12px;
+            font-weight: 900;
+            display: grid;
+            grid-template-columns: 40px 40px 40px 40px;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px;
+        }
+        .equal {
+          grid-column: 1 / 5;
+        }
+        .zero {
+          grid-column: 1 / 3;
+        }
+        .rezult {
+          grid-column: 1 / 5;
+        }
+        main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    </style>
+    <header>
+        <div class = "home">
+            <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
+            <a href="/phplearn">HOME</a>
+        </div>
+    </header>
+    <main>
+      <script>
+        let string = '';
+        function alerted1(){
+          string += '1';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted2(){
+          string += '2';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted3(){
+          string += '3';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted4(){
+          string += '/';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted5(){
+          string += '4';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted6(){
+          string += '5';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted7(){
+          string += '6';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted8(){
+          string += '*';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted9(){
+          string += '7';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted10(){
+          string += '8';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted11(){
+          string += '9';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted12(){
+          string += '-';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted13(){
+          string += '0';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted14(){
+          string = '';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function alerted15(){
+          string += '+';
+          const inputElement = document.querySelector('#rezult');
+          inputElement.value = string;
+        }
+        function someFunc(){
+          const inputElement = document.querySelector('#rezult');
+          if(string == ''){
+            inputElement.value = '';
+          }
+          else{
+            inputElement.value = eval(string);
+          }
+        }
+      </script>
+      <form>
+        <input type="text" id="rezult" class="rezult">
+        <input type="button" onclick="alerted1()" value="1" name="one">
+        <input type="button" onclick="alerted2()" value="2" name="two">
+        <input type="button" onclick="alerted3()" value="3" name="three">
+        <input type="button" onclick="alerted4()" value="/" name="divide"/>
+        <input type="button" onclick="alerted5()" value="4" name="four">
+        <input type="button" onclick="alerted6()" value="5" name="five">
+        <input type="button" onclick="alerted7()" value="6" name="six">
+        <input type="button" onclick="alerted8()" value="*" name="multiply"/>
+        <input type="button" onclick="alerted9()" value="7" name="seven">
+        <input type="button" onclick="alerted10()" value="8" name="eight">
+        <input type="button" onclick="alerted11()" value="9" name="nine">
+        <input type="button" onclick="alerted12()" value="-" name="subtract"/>
+        <input type="button" onclick="alerted13()" value="0" name="zero" class="zero">
+        <input type="button" onclick="alerted14()" value="C" name="reset" onclick="someFunc()">
+        <input type="button" onclick="alerted15()" value="+" name="add"/>
+        <input type="button" value="=" name="equal" class="equal" onclick="someFunc()">
+      </form>
+    </main>
+    <footer>
+        <p>Мослов Александр 231-323</p>
+    </footer>
+</body>
+</html>
