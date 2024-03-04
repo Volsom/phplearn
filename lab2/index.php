@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,80 +120,6 @@
             // 27 - x = 17
             $equation = $_POST['equation'];
             print('<p>'.$equation.'</p>');
-            $arr = explode(' ', $equation);
-            $line = print_r($arr, 1);
-            print('<p>'.$line.'</p>');
-            $counter = count($arr);
-            $sep = array_search('X', $arr);
-            $arr1 = array_slice($arr, $sep+1);
-            $c1 = count($arr1);
-            $arr2 = array_slice($arr, 0, $sep);
-            $c2 = count($arr2);
-            $line2 = print_r($arr1, 1);
-            $line3 = print_r($arr2, 1);
-            print('<p>'.$line2.'</p>');
-            print('<p>'.$line3.'</p>');
-            $eq = '';
-            switch(true)
-            {
-                case $c2 > $c1:
-                    for($i=0; $i < $c2; $i++)
-                    {
-                        switch($arr2[$i])
-                        {
-                            case '+': 
-                                $eq .= '- ';
-                                break;
-                            case '-': 
-                                $eq .= '+ ';
-                                break;
-                            case '*': 
-                                $eq .= '/ ';
-                                break;
-                            case '/': 
-                                $eq .= '* ';
-                                break;
-                            case '=':
-                                $eq .= '= ';
-                                break;
-                            default: 
-                                $eq .= $arr2[$i].' ';
-                                break;
-                        }
-                    }
-                    $eq = implode(' ', $arr1).' '.$eq;
-                    break;
-                case $c1 > $c2:
-                    for($j=0; $j < $c1; $j++)
-                    {
-                        switch($arr1[$j])
-                        {
-                            case '+': 
-                                $eq .= '- ';
-                                break;
-                            case '-': 
-                                $eq .= '+ ';
-                                break;
-                            case '*':
-                                $eq .= '/ ';
-                                break;
-                            case '/':
-                                $eq .= '* ';
-                                break;
-                            case '=':
-                                $eq .= '= ';
-                                break;
-                            default: 
-                                $eq .= $arr1[$j].' ';
-                                break;
-                        }
-                    }
-                    $eq = implode(' ', $arr2).' '.$eq;
-                    break;
-                    default:
-                        $eq .= 'X ';
-            }
-            echo '<p>'.$eq.'</p>'; 
         ?>
     </main>
     <footer>
