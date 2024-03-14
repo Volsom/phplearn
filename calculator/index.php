@@ -16,18 +16,12 @@
     </header>
     <main>
         <?php
-            if (!empty($_GET)) {
-                $equation = $_GET['rezult'];
-                $split = str_split($equation);
-                for($i = 0; $i < count($split); ++$i) {
-                    echo '<p>'.$i.'</p>';
-                }
-            };
+
         ?>
-        <form action="" method="get">
+        <form action="" method="post">
             <input type="text" name="rezult" id="rezult" class="rezult" value="<?php
             if (!empty($_GET)) {
-                $equation = $_GET['rezult'];
+                $equation = $_POST['rezult'];
                 echo $equation;
             };
             ?>">
