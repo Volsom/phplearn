@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторная 4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -20,9 +20,7 @@
                 $equation = $_GET['rezult'];
                 $split = str_split($equation);
                 for($i = 0; $i < count($split); ++$i) {
-                    $line = print_r($split[$i]/($i+1));
-                    echo '<p>'.$line.'</p>';
-
+                    echo '<p>'.$i.'</p>';
                 }
             };
         ?>
