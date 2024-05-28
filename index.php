@@ -92,6 +92,7 @@
             <a href="/phplearn/lab2">Lab2</a>
             <a href="/phplearn/lab3">Lab3</a>
             <a href="/phplearn/calculator">Lab4</a>
+            <a href="/phplearn/Project/www/">Project</a>
         </div>
     </header>
     <main>
@@ -120,13 +121,13 @@
             $arr1 = explode(' ', $str);
             $arr2 = str_split($str);
             $arr3 = explode('+', $str);
-            $line1 = print_r($arr1, 1);
-            $line2 = print_r($arr2, 1);
-            $line3 = print_r($arr3, 1);
-            print('<p>'.$line1.'</p>');
-            print('<p>'.$line2.'</p>');
-            print('<p>'.$line3.'</p>');
-            print_r(gettype($arr3));
+            // $line1 = print_r($arr1, 1);
+            // $line2 = print_r($arr2, 1);
+            // $line3 = print_r($arr3, 1);
+            // print('<p>'.$line1.'</p>');
+            // print('<p>'.$line2.'</p>');
+            // print('<p>'.$line3.'</p>');
+            // print_r(gettype($arr3));
             #implode — Объединяет элементы массива в строку;
         ?>
     </main>
