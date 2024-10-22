@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET and POST training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="home">
+            <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
+            <a href="/phplearn">HOME</a>
+        </div>
+    </header>
+    <main>
+        <form method="post" action="index.php">
+            <h1>Заполняем поля для передачи информации:</h1>
+            <label for="user_name">Укажите Ваше имя:</label>
+            <input name="user_name" type="text" maxlength="20" size="25" value=""/><br>
+            <label for="age">Укажите Ваш возраст:</label>
+            <input name="age" type="text" maxlength="2" size="3" value=""/><br>
+            <br><input type=submit value="Передать информацию">
+        </form>
+    </main>
+    <footer>
+        <p>Мослов Александр 231-323</p>
+    </footer>
+</body>
+</html>

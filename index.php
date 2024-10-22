@@ -92,7 +92,7 @@
             <a href="/phplearn/lab2">Lab2</a>
             <a href="/phplearn/lab3">Lab3</a>
             <a href="/phplearn/calculator">Lab4</a>
-            <a href="/phplearn/Project/www/">Project</a>
+            <a href="/phplearn/getpost/index.html">GET&POST</a>
         </div>
     </header>
     <main>
