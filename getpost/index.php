@@ -21,12 +21,8 @@
             if (!empty($_POST["user_name"]) && !empty($_POST["age"])) {
 
                 echo "<h1>Получены новые вводные:</h1>";
-                echo "<p>Имя - ";
-                echo $_POST["user_name"];
-                echo "</p>";
-                echo "<p>Возраст - ";
-                echo $_POST["age"];
-                echo " лет</p>";
+                echo "<p>Имя - ".$_POST["user_name"]."</p>";
+                echo "<p>Возраст - ".$_POST["age"]." лет</p>";
 
                 } else {
 
