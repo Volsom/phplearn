@@ -88,11 +88,13 @@
     <header>
         <div class="logo__wrapper"><img class="logo" src="/phplearn/img/5868.upto100x100.png" alt="Logo Polytech"></div>
         <div>
-            <a href="/phplearn/lab1">Lab1</a>
-            <a href="/phplearn/lab2">Lab2</a>
-            <a href="/phplearn/lab3">Lab3</a>
-            <a href="/phplearn/calculator">Lab4</a>
-            <a href="/phplearn/getpost/index.html">GET&POST</a>
+            <a href="./lab1">Lab1</a>
+            <a href="./lab2">Lab2</a>
+            <a href="./lab3">Lab3</a>
+            <a href="./calculator">Lab4</a>
+            <a href="./getpost/index.html">GET&POST</a>
+            <a href="./notebook">Notebook</a>
+            <a href="./Project/www/">Project</a>
         </div>
     </header>
     <main>
